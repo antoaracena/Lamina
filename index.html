@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador - Lámina</title>
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1a1a; /* Fondo oscuro para resaltar la lámina */
+            color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Contenedor de la lámina */
+        .contenedor-imagen {
+            background-color: #262626;
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 90vw;
+            max-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Imagen responsiva */
+        .contenedor-imagen img {
+            max-width: 100%;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: 6px;
+            display: block;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Efecto hover suave */
+        .contenedor-imagen img:hover {
+            transform: scale(1.01);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Visualizador de Lámina</h1>
+    </header>
+
+    <main class="contenedor-imagen">
+        <img src="lamina.jpg" alt="Visualización de lamina.jpg">
+    </main>
+
+    <footer>
+        <p>Archivo: lamina.jpg</p>
+    </footer>
+
+</body>
+</html>
